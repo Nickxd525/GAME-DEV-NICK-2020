@@ -1,0 +1,39 @@
+<script>
+
+function myRunFunction(){
+	document.getElementById('myDiv01').innerHTML += '<br>myFunction running'
+	document.getElementById('myText01').value = ""
+}
+
+</script>
+
+<h1 align=center>t3a03-kitchen-sink-nick.html</h1>
+
+<input type="text" id="myText01" value="5">
+
+<input type="button" value='Mouse Goes Here' onMouseover="{
+	document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value;
+
+	if (isNaN(document.getElementById('myText01').value)){
+	document.getElementById('myText01').value = 1
+}
+	for (let myLoop = 0; myLoop < 5; myLoop++){
+		myRunFunction()
+
+}
+
+	myX = document.getElementById('myText01').value
+		document.getElementById('myDiv01').innerHTML += '<br> myX variable: ' + myX
+
+myArray = new Array(myX)
+myArray[0] = myX * 1 + 10
+myArray[1] = myX * 6
+document.getElementById('myDiv01').innerHTML += '<br> myArray contains: ' + myArray
+
+myObj = {myNum : 6, myName : 'nick'}
+document.getElementById('myDiv01').innerHTML += '<br>myObj contains: ' + myObj.myName + ', '+ myObj.myNum
+
+}"><br>
+
+
+<div id="myDiv01">...</div>
