@@ -1,0 +1,27 @@
+<h1 align=center>t3a07-decisions-nick</h1>
+
+<input id="myText01" type=text value="5">
+
+<input type="button" value="Decision" onclick="{
+	x=document.getElementById('myText01').value
+	
+	if(x==5){
+	document.getElementById('myDiv01').innerHTML += '<br>It is a Five, input was: ' +document.getElementById('myText01').value}
+
+	if(x==4){
+	document.getElementById('myDiv01').innerHTML += '<br>It is a Four, input was: ' +document.getElementById('myText01').value}
+
+	if(x==3){
+	document.getElementById('myDiv01').innerHTML += '<br>It is a Three, input was: ' +document.getElementById('myText01').value}
+
+	if(x==2){
+	document.getElementById('myDiv01').innerHTML += '<br>It is a Two, input was: ' +document.getElementById('myText01').value}
+
+	if(x==1){
+	document.getElementById('myDiv01').innerHTML += '<br>It is a One, input was: ' +document.getElementById('myText01').value}
+
+	if(x==0){
+	document.getElementById('myDiv01').innerHTML += '<br>It is a Zero, input was: ' +document.getElementById('myText01').value}
+}">
+
+<div id="myDiv01">...</div>

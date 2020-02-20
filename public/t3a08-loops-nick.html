@@ -1,0 +1,16 @@
+<h1 align=center>t3a08-loops-nick</h1>
+
+<input id="myText01" type=text value="20">
+
+<input type="button" value="Loops" onclick="{document.getElementById('myDiv01').innerHTML =''
+
+for (myX=0; myX <= document.getElementById('myText01').value; myX++){
+	document.getElementById('myDiv01').innerHTML += '<br>Loop #:' + myX
+
+if (myX == 5){document.getElementById('myDiv01').innerHTML +=', Wow a five'
+	}
+
+}
+}">
+
+<div id="myDiv01">...</div>
